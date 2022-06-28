@@ -2,7 +2,7 @@
 ## Beta Multi Device 
 
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJDcHPHsij7anNGZCHUw3xdzpsjSOWm17d_U7rFrXxpoxESk1tEbwJ_Zk&s=10" alt="LEXXY BOT" width="200"/>
+<img src="https://github.com/Nurutomo26.png?size=100" alt="ClevvBotz" width="200"/>
 
 <p align="center">
     <a href="https://Nurutomo26.github.io">
@@ -17,7 +17,7 @@
 
 Click the deploy icon below !
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lexxy24/BOTMD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nurutomo26/wa-md)
 
 ```bash
  > heroku/nodejs
