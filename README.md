@@ -5,10 +5,10 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJDcHPHsij7anNGZCHUw3xdzpsjSOWm17d_U7rFrXxpoxESk1tEbwJ_Zk&s=10" alt="LEXXY BOT" width="200"/>
 
 <p align="center">
-    <a href="https://Lexxy24.github.io">
+    <a href="https://Nurutomo26.github.io">
         <img
-            src="https://readme-typing-svg.herokuapp.com?size=15&width=280&lines=Created+By+Lexxy+Official+🙏"
-            alt="YT Lexxy Official"
+            src="https://readme-typing-svg.herokuapp.com?size=15&width=280&lines=Created+By+Nurutomo26+🙏"
+            alt="By Nurutomo26"
         />
     </a>
 </p>
@@ -34,23 +34,21 @@ Click the deploy icon below !
 > pkg install ffmpeg
 > pkg install yarn
 > termux-setup-storage
-> git clone https://github.com/Lexxy24/BOTMD.git
-> cd BOTMD
+> git clone https://github.com/Nurutomo26/wa-md.git
+> cd wa-md
 > yarn
 > npm start
 ```
 
 ## RDP/VPS USER
 ```bash 
-> git clone https://github.com/Lexxy24/BOTMD.git
-> cd BOTMD
+> git clone https://github.com/Nurutomo26/wa-md.git
+> cd wa-md
 > npm install
 > npm start
 ```
 
 # My Sosial
-- [Group Bot Wa 1](https://chat.whatsapp.com/CT5mUKSNRmMB3yuNfjGPso)
-- [Group Bot Wa 2](https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG)
-- [Group Bot Wa 3](https://chat.whatsapp.com/EDYV3OK6wHaDAb6J1iMnUa)
-- [YouTube ](https://youtube.com/c/LEX4YOUU)
-- [Whatsapp ](https://wa.me/6285789004732)
+- [Group Bot Wa](https://chat.whatsapp.com/E5pZ8kq6QjREB9JRbcmhha)
+- [Instagram](https://instagram.com/jayasantika_26)
+- [Whatsapp ](https://wa.me/6289524664142)
