@@ -1,2 +1,2 @@
-language = "nodejs"
-run = "node ."
+language = "bash"
+run = "install-pkg python && node ."
