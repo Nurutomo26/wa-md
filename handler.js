@@ -937,6 +937,8 @@ m.reply(`  ❏ *Search Menu*
  › ${prefix}yts [query]
  › ${prefix}google [query]
  › ${prefix}gimage [query]
+ › ${prefix}ttp [query]
+ › ${prefix}attp [query]
  › ${prefix}pinterest [query]
  › ${prefix}wallpaper [query]
  › ${prefix}wikimedia [query]
@@ -1588,6 +1590,11 @@ break
              }
             }
             break
+	    case 'ttp': case 'attp': {
+		if (!text) throw 'Masukan textnya!'
+		kagura.sendMessage(m.chat, { sticker: { url: API('xteam', `/${command}`, { file: '', text: text }, 'APIKEY') }}, { quoted: m })
+	    }
+	    break
             case 'editinfo': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -3338,6 +3345,8 @@ Prefix : *Multi Prefix*
 • ${prefix}yts
 • ${prefix}google
 • ${prefix}gimage
+• ${prefix}ttp [query]
+• ${prefix}attp [query]
 • ${prefix}pinterest
 • ${prefix}wallpaper
 • ${prefix}wikimedia
@@ -3492,8 +3501,7 @@ Prefix : *Multi Prefix*
 • ${prefix}setexif
 • ${prefix}setmenu [option]
 • ${prefix}listpc
-• ${prefix}listgc
-`
+• ${prefix}listgc`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
