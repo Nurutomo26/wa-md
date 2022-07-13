@@ -1,2 +1,2 @@
 language = "bash"
-run = "install-pkg python && node ."
+run = "install-pkg python && install-pkg ffmpeg && install-pkg imagemagick && install-pkg webp && node ."
