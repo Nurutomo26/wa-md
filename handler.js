@@ -937,8 +937,6 @@ m.reply(`  ❏ *Search Menu*
  › ${prefix}yts [query]
  › ${prefix}google [query]
  › ${prefix}gimage [query]
- › ${prefix}ttp [query]
- › ${prefix}attp [query]
  › ${prefix}pinterest [query]
  › ${prefix}wallpaper [query]
  › ${prefix}wikimedia [query]
@@ -1590,11 +1588,6 @@ break
              }
             }
             break
-	    case 'ttp': case 'attp': {
-		if (!text) throw 'Masukan textnya!'
-		kagura.sendMessage(m.chat, { sticker: { url: API('xteam', `/${command}`, { file: '', text: text }, 'APIKEY') }}, { quoted: m })
-	    }
-	    break
             case 'editinfo': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -1761,7 +1754,7 @@ break
 		m.reply('Sukses Broadcast')
             }
             break
-            /*case 'infochat': {
+            case 'infochat': {
                 if (!m.quoted) m.reply('Reply Pesan')
                 let msg = await m.getQuotedObj()
                 if (!m.quoted.isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
@@ -1775,7 +1768,7 @@ break
                 }
                 kagura.sendTextWithMentions(m.chat, teks, m)
             }
-            break*/
+            break
             case 'q': case 'quoted': {
 		if (!m.quoted) return m.reply('Reply Pesannya!!')
 		let wokwol = await kagura.serializeM(await m.getQuotedObj())
@@ -1842,12 +1835,7 @@ break
 	    break
 	       case 'attp': case 'ttp': {
            if (!text) throw `Example : ${prefix + command} text`
-           await kagura.sendMedia(m.chat, api('xteam' '/attp', { file '', text: text }), global.packname, global.author, m, {asSticker: true})
-         }
-         break
-           case 'ttp': {
-           if (!text) throw `Example : ${prefix + command} text`
-           await kagura.sendMedia(m.chat, api('xteam', '/ttp', { file '', text: text }), global.packname, global.author, m, {asSticker: true})
+           await kagura.sendMedia(m.chat, api('xteam', `/${command}`, { file : '', text : text }, 'APIKEY'), global.packname, global.author, m, {asSticker: true})
          }
          break
 	       case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
@@ -3345,8 +3333,6 @@ Prefix : *Multi Prefix*
 • ${prefix}yts
 • ${prefix}google
 • ${prefix}gimage
-• ${prefix}ttp [query]
-• ${prefix}attp [query]
 • ${prefix}pinterest
 • ${prefix}wallpaper
 • ${prefix}wikimedia
@@ -3488,7 +3474,7 @@ Prefix : *Multi Prefix*
 • ${prefix}juzamma
 • ${prefix}tafsirsurah 
 
-[ Owner Menu ]
+ ❏ < *Owner Menu* >
 • ${prefix}react [emoji]
 • ${prefix}chat [option]
 • ${prefix}join [link]
@@ -3501,7 +3487,8 @@ Prefix : *Multi Prefix*
 • ${prefix}setexif
 • ${prefix}setmenu [option]
 • ${prefix}listpc
-• ${prefix}listgc`
+• ${prefix}listgc
+`
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
